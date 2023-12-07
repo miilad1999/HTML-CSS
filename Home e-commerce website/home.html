@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Online_shop</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav_bar">
+        <div class="hamburger_menu">
+          <input id="menu_toggle" type="checkbox" />
+          <label class="menu_btn" for="menu_toggle">
+            <span></span>
+          </label>
+          <ul class="menu_box">
+            <li><a class="menu_item" href="#">Home</a></li>
+            <li><a class="menu_item" href="#">News</a></li>
+            <li><a class="menu_item" href="#">About</a></li>
+            <li><a class="menu_item" href="#">Blog</a></li>
+          </ul>
+        </div>
+        <svg class="logo">
+          <use xlink:href="images/sprite.svg#icons8-logo"></use>
+        </svg>
+        <div class="search" tabindex="0">
+          <div class="select_group">
+            <select class="selecter">
+              <option hidden>category</option>
+              <option value="all">All</option>
+              <option value="all">Toys</option>
+              <option value="all">Electronic</option>
+              <option value="all">Clothes</option>
+            </select>
+            <input type="text" placeholder="search" />
+            <svg class="search_icon">
+              <use xlink:href="images/sprite.svg#magnifying-glass-solid"></use>
+            </svg>
+          </div>
+        </div>
+        <a href="#" class="account_continer">
+          <svg class="account_icon">
+            <use xlink:href="images/sprite.svg#user-solid"></use>
+          </svg>
+          <p class="item">Account <br />Sign in</p>
+        </a>
+        <a href="#" class="basket_continer">
+          <svg class="basket_icon">
+            <use xlink:href="images/sprite.svg#basket-shopping-solid"></use>
+          </svg>
+          <p class="item">card <br />$0.00</p>
+        </a>
+      </nav>
+      <div class="second_row">
+        <div class="drop_category">
+          <button class="category_btn">
+            Shop by catagory
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown_content column">
+            <a href="#">Toys</a>
+            <a href="#">Electronic</a>
+            <a href="#">Clothes</a>
+          </div>
+        </div>
+        <a href="">Home</a>
+        <a href="">News</a>
+        <a href="">About</a>
+        <a href="">Blog</a>
+      </div>
+    </header>
+    <div class="slider">
+      <div class="images">
+        <input type="radio" name="slide" id="img1" checked />
+        <input type="radio" name="slide" id="img2" />
+        <img src="images/slider1.png " class="m1" alt="slider" />
+        <img src="images/slider2.png" class="m2" alt="slider" />
+      </div>
+      <div class="dots">
+        <label for="img1"></label>
+        <label for="img2"></label>
+      </div>
+    </div>
+    <div class="contine_info">
+      <div class="info">
+        <svg class="info_icon">
+          <use xlink:href="images/sprite.svg#right-left-solid"></use>
+        </svg>
+        <div class="info_text">
+          <h3>7 days return</h3>
+          <p>If good have problems</p>
+        </div>
+      </div>
+      <div class="info">
+        <svg class="info_icon">
+          <use xlink:href="images/sprite.svg#truck-fast-solid"></use>
+        </svg>
+        <div class="info_text">
+          <h3>Free Delivery</h3>
+          <p>For all order over 99$</p>
+        </div>
+      </div>
+      <div class="info">
+        <svg class="info_icon">
+          <use xlink:href="images/sprite.svg#credit-card-regular"></use>
+        </svg>
+        <div class="info_text">
+          <h3>Easy Payment</h3>
+          <p>secure payment 100%</p>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="home_title">
+      <h2>Trending products</h2>
+      <ul class="title_product">
+        <li>New</li>
+        <li>Top seller</li>
+        <li>Top rate</li>
+      </ul>
+    </div>
+    <div class="product_container">
+      <div class="product_card">
+        <img
+          src="images/product1.jpg"
+          alt="Product Name"
+          class="product_image" />
+        <h3 class="product_name">Product Name</h3>
+        <p class="product_description">Product Description</p>
+        <div class="product_price">$99.99</div>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="product_card">
+        <img
+          src="images/product2.jpg"
+          alt="Product Name"
+          class="product_image" />
+        <h3 class="product_name">Product Name</h3>
+        <p class="product_description">Product Description</p>
+        <div class="product_price">
+          <span class="original_price">$99.99</span>
+          <span class="discount_price">$79.99</span>
+        </div>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="product_card">
+        <img
+          src="images/product3.jpg"
+          alt="Product Name"
+          class="product_image" />
+        <h3 class="product_name">Product Name</h3>
+        <p class="product_description">Product Description</p>
+        <div class="product_price">$99.99</div>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="product_card">
+        <img
+          src="images/product4.jpg"
+          alt="Product Name"
+          class="product_image" />
+        <h3 class="product_name">Product Name</h3>
+        <p class="product_description">Product Description</p>
+        <div class="product_price">
+          <span class="original_price">$99.99</span>
+          <span class="discount_price">$79.99</span>
+        </div>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="product_card">
+        <img
+          src="images/product1.jpg"
+          alt="Product Name"
+          class="product_image" />
+        <h3 class="product_name">Product Name</h3>
+        <p class="product_description">Product Description</p>
+        <div class="product_price">$99.99</div>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="product_card">
+        <img
+          src="images/product2.jpg"
+          alt="Product Name"
+          class="product_image" />
+        <h3 class="product_name">Product Name</h3>
+        <p class="product_description">Product Description</p>
+        <div class="product_price">
+          <span class="original_price">$99.99</span>
+          <span class="discount_price">$79.99</span>
+        </div>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="product_card">
+        <img
+          src="images/product3.jpg"
+          alt="Product Name"
+          class="product_image" />
+        <h3 class="product_name">Product Name</h3>
+        <p class="product_description">Product Description</p>
+        <div class="product_price">$99.99</div>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="product_card">
+        <img
+          src="images/product4.jpg"
+          alt="Product Name"
+          class="product_image" />
+        <h3 class="product_name">Product Name</h3>
+        <p class="product_description">Product Description</p>
+        <div class="product_price">
+          <span class="original_price">$99.99</span>
+          <span class="discount_price">$79.99</span>
+        </div>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+    </div>
+    <button class="btn_all">View All</button>
+    <div class="banner_continer">
+      <div class="banner" id="banner1">
+        <div class="banner_text">
+          <h4>Title</h4>
+          <p>
+            Lorem ipsum dolor sit ame <br />
+            Lorem ipsum dolor sit ame
+          </p>
+        </div>
+      </div>
+      <div class="banner" id="banner2">
+        <div class="banner_text">
+          <h4>Title</h4>
+          <p>
+            Lorem ipsum dolor sit ame <br />
+            Lorem ipsum dolor sit ame
+          </p>
+        </div>
+      </div>
+      <div class="banner" id="banner3">
+        <div class="banner_text">
+          <h4>Title</h4>
+          <p>
+            Lorem ipsum dolor sit ame <br />
+            Lorem ipsum dolor sit ame
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="column_footer">
+        <svg class="logo">
+          <use xlink:href="images/sprite.svg#icons8-logo"></use>
+        </svg>
+        <p>
+          ernatur commodi unde <br />
+          qui magnam maxime eaque
+        </p>
+        <h3>Follow Us</h3>
+        <div class="media_icon">
+          <svg class="social_icon">
+            <use xlink:href="images/sprite.svg#facebook"></use>
+          </svg>
+          <svg class="social_icon">
+            <use xlink:href="images/sprite.svg#whatsapp"></use>
+          </svg>
+          <svg class="social_icon">
+            <use xlink:href="images/sprite.svg#tiktok"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="column_footer">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>About</li>
+          <li>Contact Us</li>
+          <li>Our Services</li>
+          <li>Latest News</li>
+        </ul>
+      </div>
+      <div class="column_footer">
+        <h3>Subscribe</h3>
+        <p>Don't miss to subscribe to our new feeds.</p>
+        <div>
+          <form action="#">
+            <input type="text" placeholder="Email Address" />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
